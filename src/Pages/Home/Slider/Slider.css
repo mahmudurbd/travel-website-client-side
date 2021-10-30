@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+.carousel-cap {
+    padding: 5% 0;
+}
+.carousel-cap h1 {
+    font-family: 'Nothing You Could Do', cursive;
+    font-size: 150px;
+}
+.carousel-cap p {
+    font-size: 25px;
+    margin-bottom: 0;
+}
+@media only screen and (max-width: 992px) {
+    .carousel-cap {
+        padding: 0;
+    }
+    .carousel-cap h1 {
+        font-size: 120px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .carousel-cap {
+        padding: 0;
+    }
+    .carousel-cap h1 {
+        font-size: 100px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .carousel-cap {
+        padding:10px 0;
+    }
+    .carousel-cap h1 {
+        font-size: 80px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    
+    .carousel-cap h1 {
+        font-size: 50px;
+    }
+    .carousel-cap p {   
+        display: none;
+   }
+}
+@media only screen and (max-width: 400px) {
+    
+    .carousel-cap h1 {
+        font-size: 45px;
+    }
+    
+}

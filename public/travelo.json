@@ -1,0 +1,36 @@
+[{
+    "id": 1,
+    "service_name": "Physiotherapy",
+    "description": "Physiotherapy is an evidence-based healthcare profession that views human movement as central to health and wellbeing.",
+    "image": "https://i.ibb.co/Tmfp56v/image-1.jpg"
+  }, 
+  {
+    "id": 2,
+    "service_name": "Sports Medicine",
+    "description": "Sports Medicine can be one of the most effective treatments of any muscles, joints, ligaments, and tendon related injuries.",
+    "image": "https://i.ibb.co/8797Q09/image-2.jpg"
+  }, 
+  {
+    "id": 3,
+    "service_name": "Podiatry",
+    "description": "Podiatry is the assessment, diagnosis, and treatment of all foot and lower limb conditions, injury and care needs.",
+    "image": "https://i.ibb.co/BTXD3cN/image-3.jpg"
+  }, 
+  {
+    "id": 4,
+    "service_name": "Clinical Pilates and Pilates",
+    "description": "Pilates is a gentle form of exercise which improves posture, flexibility, and core strength. It was originally developed in the 1920’s by Joseph Pilates.",
+    "image": "https://i.ibb.co/cbRQ96J/image-4.jpg"
+  }, 
+  {
+    "id": 5,
+    "service_name": "REMEDIAL MASSAGE",
+    "description": "Remedial massage is a natural therapy that focuses on specific pressure and manipulation of the muscular system to promote rehabilitation and relaxation.",
+    "image": "https://i.ibb.co/g9vKnbf/image-5.jpg"
+  }, 
+  {
+    "id": 6,
+    "service_name": "DIETETICS",
+    "description": "Dietetics is the science of diet, food and nutrition, and the role they play in overall health.",
+    "image": "https://i.ibb.co/kBqzktS/image-6.jpg"
+  }]

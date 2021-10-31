@@ -5,7 +5,7 @@ import './Packages.css';
 const Packages = () => {
     const [packages,setPackages] = useState([]);
     useEffect(() => {
-        fetch('/travelo.json')
+        fetch('http://localhost:5000/tourPackages')
         .then(res => res.json())
         .then(data => setPackages(data));
     },[])

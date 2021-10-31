@@ -11,49 +11,72 @@ const Booking = () => {
     const onSubmit = data => console.log(data);
 
     useEffect(()=> {
-        fetch('/travelo.json')
+        fetch('http://localhost:5000/tourPackages')
         .then(res => res.json())
         .then(data => setTotalData(data))
     },[]);
 
-    const bookingItem = totalData.find(item => item.id == bookingId)
+    const bookingItem = totalData.find(item => item._id == bookingId)
     // console.log(bookingItem);
     return (
-        <section class="intro">
-  <div class="mask d-flex align-items-center h-100 gradient-custom">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 col-xl-10">
-          <div class="card">
-            <div class="card-body p-5">
-
-              <div class="row d-flex align-items-center">
-                <div class="col-md-6 col-xl-7">
-
-                  <div class="text-center pt-md-5 pb-5 my-md-5">
-                  <img className="img-fluid" src={bookingItem?.image} alt="" />
+        <section className="intro">
+            <div className="mask d-flex align-items-center h-100 gradient-custom">
+                <div className="container">
+                <div className="row justify-content-center">
+                    <div className="col-12 col-xl-10">
+                    <div className="card">
+                        <div className="card-body p-5">
+                        <div className="row d-flex align-items-center">
+                            <div className="col-md-6 col-xl-7">
+                            <div className="text-center pt-md-5 pb-5 my-md-5">
+                            <div class="container">
+                            <section class="mx-auto my-5" >
+                            <div class="card">
+                            <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                                <img src={bookingItem?.image} class="img-fluid" alt="" />
+                                <a href="#!">
+                                <div class="mask" ></div>
+                                </a>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title font-weight-bold"><a href="/">{bookingItem?.destination}</a></h5>
+                                <ul class="list-unstyled list-inline mb-0">
+                                <li class="list-inline-item ms-0">
+                                    <i class="far fa-clock text-warning fa-md"></i> {bookingItem?.duration} Days
+                                </li>
+                                <li class="list-inline-item">
+                                    <p class="text-muted">{bookingItem?.review} (reviews)</p>
+                                </li>
+                                </ul>
+                                <h4 class="mb-2">$ {bookingItem?.price}</h4>
+                                <p class="card-text">{bookingItem?.description}</p>
+                            </div>
+                            </div>
+                            
+                        </section>
+                    </div>
                   </div>
 
                 </div>
-                <div class="col-md-6 col-xl-4 text-center">
+                <div className="col-md-6 col-xl-4 text-center">
 
-                  <h2 class="fw-bold mb-4 pb-2">Checkout Form</h2>
+                  <h2 className="fw-bold mb-4 pb-2">Checkout Form</h2>
                     <form onSubmit={handleSubmit(onSubmit)}>
-                    <div class="form-outline mb-4">
-                        <input defaultValue={user.displayName} {...register("name")} type="text" id="typeText" class="form-control form-control-lg" placeholder="Your Name" />
+                    <div className="form-outline mb-4">
+                        <input defaultValue={user.displayName} {...register("name")} type="text" id="typeText" className="form-control form-control-lg" placeholder="Your Name" />
                     </div>
-                    <div class="form-outline mb-3">
-                        <input defaultValue={user.email} {...register("email", { required: true })} type="email" id="typeEmail" class="form-control form-control-lg" placeholder="Your Email" />
+                    <div className="form-outline mb-3">
+                        <input defaultValue={user.email} {...register("email", { required: true })} type="email" id="typeEmail" className="form-control form-control-lg" placeholder="Your Email" />
                         {errors.email && <span className="text-danger">This field is required</span>}
                     </div>
-                    <div class="form-outline mb-4">
-                        <input defaultValue="" {...register("address")} type="text" id="typeText" class="form-control form-control-lg" placeholder="Address" />
+                    <div className="form-outline mb-4">
+                        <input defaultValue="" {...register("address")} type="text" id="typeText" className="form-control form-control-lg" placeholder="Address" />
                     </div>
-                    <div class="form-outline mb-4">
-                        <input defaultValue="" {...register("phone")} type="text" id="typeText" class="form-control form-control-lg" placeholder="Phone Number" />
+                    <div className="form-outline mb-4">
+                        <input defaultValue="" {...register("phone")} type="text" id="typeText" className="form-control form-control-lg" placeholder="Phone Number" />
                     </div>
-                    <div class="text-center">
-                        <button class="btn btn-info btn-block btn-lg" type="submit">Place Order</button>
+                    <div className="text-center">
+                        <button className="btn btn-info btn-block btn-lg" type="submit">Place Order</button>
                     </div>
                     </form>
                 </div>

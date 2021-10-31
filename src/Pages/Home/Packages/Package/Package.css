@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+.package  {
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+}
+.package .card:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: 0.5s all ease-in-out;
+}
+
+.package h5 {
+    font-size: 22px;
+}
+.package p {
+    font-size: 16px;
+}

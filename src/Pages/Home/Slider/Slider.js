@@ -7,7 +7,7 @@ import img3 from '../../../images/img-3.png';
 
 const Slider = () => {
     return (
-        <Carousel fade className="h-100">
+        <Carousel fade className="h-100 overflow-hidden">
             <Carousel.Item>
                 <img
                 className="d-block w-100 img-fluid"

@@ -1,12 +1,12 @@
 import React from 'react';
-import Features from '../Features/Features';
+ import Features from '../Features/Features';
 import Packages from '../Packages/Packages';
 import Slider from '../Slider/Slider';
 import Testimonial from '../Testimonial/Testimonial';
 
 const Home = () => {
     return (
-        <div>
+        <div id="home">
             <Slider></Slider>
             <Packages></Packages>
             <Features></Features>

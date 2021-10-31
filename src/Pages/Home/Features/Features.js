@@ -11,7 +11,7 @@ const Features = () => {
                 </div>
                 <div className="row text-center justify-content-center mt-5">
                 <div className="col-12 col-sm-6 col-lg-3">
-                    <img alt="" className="fdb-icon" src="https://i.ibb.co/VMWF7bB/train.png"/>
+                    <img alt="" className="img-fluid" src="https://i.ibb.co/VMWF7bB/train.png"/>
                     <h3><strong>Comfortable Journey</strong></h3>
                     <p>Far far away, behind the word mountains, far from the countries</p>
                 </div>

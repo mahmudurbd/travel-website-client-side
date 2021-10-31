@@ -1,10 +1,11 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import './Package.css';
+ import { Link } from 'react-router-dom';
 
 const Package = (props) => {
-    const {id,service_name,description,image} = props.package
+    const {id,destination,description,image,price,duration,review} = props.package
     return (
-        <div className="col">
+        <div className="col package">
             <div className="card h-100">
                 <img
                     src={image}
@@ -12,11 +13,21 @@ const Package = (props) => {
                     alt="..."
                 />
                 <div className="card-body">
-                    <h5 className="card-title">{service_name}</h5>
-                    <p className="card-text">{description}</p>
-                    <a href={`/booking/${id}`}>
-                        <button className="service-btn btn-primary">Take Service <i className="fas fa-location-arrow"></i></button>
-                    </a>
+                    <h5 className="card-title text-start">{destination}</h5>
+                    <p className="card-text text-start text-muted">{description}</p>
+                    <div className="d-flex justify-content-between">
+                    <Link to={`/booking/${id}`}>
+                        <button className="btn btn-danger">Book Now <i className="fas fa-location-arrow"></i></button>
+                    </Link>
+                    <p><i class="fas fa-dollar-sign">{price}</i></p>
+                    </div>
+                    
+                    <hr />
+                    <div className="d-flex justify-content-between">
+                    <p className="text-muted"><i class="far fa-clock text-danger"></i> {duration} days</p>
+                    <p className="text-muted">{review} reviews</p>
+                    </div>
+                    
                 </div>
             </div>
         </div>

@@ -1,5 +1,5 @@
 import React from 'react';
-
+import FtLogo from '../../../images/footer-logo.png';
 const Footer = () => {
     return (       
             <div className="container-fluid overflow-hidden bg-dark">
@@ -37,6 +37,9 @@ const Footer = () => {
                     <hr className="my-5" />
                     <section className="mb-5">
                         <div className="row d-flex justify-content-center">
+                        <div className="col-12 mb-2">
+                            <img src={FtLogo} alt="" />
+                        </div>
                         <div className="col-lg-8">
                             <p>
                             Travelo is a fast growing Tours & Travel Planner in Dhaka Bangladesh.We don’t just offer tours and travel services but also provide reliable and hassle free travel planning facilities.If you are planning to explore THE BANGLADESH, then we are here to Keep SURPRISING YOU!! We always make the tour comfortable & hassle free.

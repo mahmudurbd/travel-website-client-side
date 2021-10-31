@@ -1,36 +1,60 @@
 [{
-    "id": 1,
-    "service_name": "Physiotherapy",
-    "description": "Physiotherapy is an evidence-based healthcare profession that views human movement as central to health and wellbeing.",
-    "image": "https://i.ibb.co/Tmfp56v/image-1.jpg"
-  }, 
-  {
-    "id": 2,
-    "service_name": "Sports Medicine",
-    "description": "Sports Medicine can be one of the most effective treatments of any muscles, joints, ligaments, and tendon related injuries.",
-    "image": "https://i.ibb.co/8797Q09/image-2.jpg"
-  }, 
-  {
-    "id": 3,
-    "service_name": "Podiatry",
-    "description": "Podiatry is the assessment, diagnosis, and treatment of all foot and lower limb conditions, injury and care needs.",
-    "image": "https://i.ibb.co/BTXD3cN/image-3.jpg"
-  }, 
-  {
-    "id": 4,
-    "service_name": "Clinical Pilates and Pilates",
-    "description": "Pilates is a gentle form of exercise which improves posture, flexibility, and core strength. It was originally developed in the 1920’s by Joseph Pilates.",
-    "image": "https://i.ibb.co/cbRQ96J/image-4.jpg"
-  }, 
-  {
-    "id": 5,
-    "service_name": "REMEDIAL MASSAGE",
-    "description": "Remedial massage is a natural therapy that focuses on specific pressure and manipulation of the muscular system to promote rehabilitation and relaxation.",
-    "image": "https://i.ibb.co/g9vKnbf/image-5.jpg"
-  }, 
-  {
-    "id": 6,
-    "service_name": "DIETETICS",
-    "description": "Dietetics is the science of diet, food and nutrition, and the role they play in overall health.",
-    "image": "https://i.ibb.co/kBqzktS/image-6.jpg"
-  }]
+  "id": 1,
+  "destination": "Bali",
+  "description": "Bali is a province of Indonesia and the westernmost of the Lesser Sunda Islands",
+  "image": "https://i.ibb.co/B6jKrCW/bali.jpg",
+  "price": 350,
+  "duration": 4,
+  "review": 32
+}, 
+{
+  "id": 2,
+  "destination": "Gili Islands, Lombok",
+  "description": "Gili Trawangan is the largest of Lombok's Gili Islands and the only one to rise significantly (30 m) above sea level.",
+  "image": "https://i.ibb.co/jwzrGs5/gili.jpg",
+  "price": 400,
+  "duration": 5,
+  "review": 14
+}, 
+{
+  "id": 3,
+  "destination": "Sydney Opera House",
+  "description": "The Sydney Opera House honours our First Nations by fostering a shared sense of belonging for all Australians",
+  "image": "https://i.ibb.co/zNc4HfZ/opera.jpg",
+  "price": 500,
+  "duration": 3,
+  "review": 25
+}, 
+{
+  "id": 4,
+  "destination": "Melbourne's Culture, Victoria",
+  "description": "The culture of Melbourne, the capital of the Australian state of Victoria, encompasses the city's artistic, culinary, literary, musical, political",
+  "image": "https://i.ibb.co/gDvXzJN/victoria.jpg",
+  "price": 450,
+  "duration": 4,
+  "review": 26
+}, 
+{
+  "id": 5,
+  "destination": "The Matterhorn",
+  "description": "The Matterhorn, Switzerland's iconic pointed peak is one of the highest mountains in the Alps",
+  "image": "https://i.ibb.co/hfm1LXD/matterhorn.jpg",
+  "price": 700,
+  "duration": 7,
+  "review": 35
+}, 
+{
+  "id": 6,
+  "destination": "Lake Geneva",
+  "description": "BiLake Geneva, Europe's largest Alpine lake, straddles the Swiss/French border, and laps at the shores of some of Switzerland's most popular citiesgtax",
+  "image": "https://i.ibb.co/0ZM2m0g/geneva.jpg",
+  "price": 342,
+  "duration": 4,
+  "review": 56
+}]
+
+
+
+
+
+

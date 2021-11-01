@@ -6,10 +6,12 @@ import useAuth from '../../hooks/useAuth';
 const Booking = () => {
     const {bookingId} = useParams();
     const [totalData,setTotalData] = useState([]);
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    //const { register, handleSubmit, formState: { errors } } = useForm();
     const {user} = useAuth();
-    const onSubmit = data => console.log(data);
-
+    /*  const onSubmit = data => {
+        console.log(data)
+    };
+ */
     useEffect(()=> {
         fetch('http://localhost:5000/tourPackages')
         .then(res => res.json())
@@ -18,13 +20,32 @@ const Booking = () => {
 
     const bookingItem = totalData.find(item => item._id == bookingId)
     // console.log(bookingItem);
+    const { register, handleSubmit, reset, formState: { errors } } = useForm();
+    const onSubmit = data => {
+        data.order = bookingItem;
+        // console.log(data)
+        fetch('http://localhost:5000/orders',{
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+        .then(res => res.json())
+        .then(result => {
+            if(result.insertedId){
+                alert('Order processed successfully');
+                reset();
+            }
+        })
+    };
     return (
         <section className="intro">
             <div className="mask d-flex align-items-center h-100 gradient-custom">
                 <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-12 col-xl-10">
-                    <div className="card">
+                    <div className="card my-4">
                         <div className="card-body p-5">
                         <div className="row d-flex align-items-center">
                             <div className="col-md-6 col-xl-7">
@@ -77,8 +98,13 @@ const Booking = () => {
                     </div>
                     <div className="text-center">
                         <button className="btn btn-info btn-block btn-lg" type="submit">Place Order</button>
+                        
                     </div>
                     </form>
+                    <br />
+                        ------or------
+                        <br />
+                        <a href="/addpackage" className="btn btn-info btn-block btn-lg" type="submit">Add New Package</a>
                 </div>
               </div>
 

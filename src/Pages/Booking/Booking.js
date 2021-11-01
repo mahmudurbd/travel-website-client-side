@@ -13,7 +13,7 @@ const Booking = () => {
     };
  */
     useEffect(()=> {
-        fetch('http://localhost:5000/tourPackages')
+        fetch('https://shrouded-springs-98541.herokuapp.com/tourPackages')
         .then(res => res.json())
         .then(data => setTotalData(data))
     },[]);
@@ -24,7 +24,7 @@ const Booking = () => {
     const onSubmit = data => {
         data.order = bookingItem;
         // console.log(data)
-        fetch('http://localhost:5000/orders',{
+        fetch('https://shrouded-springs-98541.herokuapp.com/orders',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

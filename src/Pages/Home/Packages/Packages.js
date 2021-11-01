@@ -5,7 +5,7 @@ import './Packages.css';
 const Packages = () => {
     const [packages,setPackages] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/tourPackages')
+        fetch('https://shrouded-springs-98541.herokuapp.com/tourPackages')
         .then(res => res.json())
         .then(data => setPackages(data));
     },[])

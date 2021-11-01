@@ -1,8 +1,20 @@
-# Getting Started with Create React App
+# Travelo | Travel & Tour Packages Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Live Demo
+### [Click Here](https://travelo-tour-package.web.app/)
 
-## Available Scripts
+<br>
+<br>
+
+## About This Project
+-This is a Travel Packages related website built by React
+-Here People can book their packages
+-New Packages can be added easily
+
+## Features
+-HTML, CSS, Bootstrap
+-JavaScript, React Bootstrap, React Router
+-Firebase, MongoDB
 
 In the project directory, you can run:
 

@@ -22,4 +22,4 @@ for that place. Then Users have to fill up a Checkout form for placing the User'
 - Express Js
 - MongoDB
 
-For visiting [Travelo Server Side](https://github.com/mahmudurbd/travel-website-client-side)
+For visiting [Travelo Server Side](https://github.com/mahmudurbd/travel-website-server-side)

@@ -13,7 +13,7 @@ const Booking = () => {
     };
  */
     useEffect(()=> {
-        fetch('https://shrouded-springs-98541.herokuapp.com/tourPackages')
+        fetch('https://travel-website.up.railway.app/tourPackages')
         .then(res => res.json())
         .then(data => setTotalData(data))
     },[]);
@@ -24,7 +24,7 @@ const Booking = () => {
     const onSubmit = data => {
         data.order = bookingItem;
         // console.log(data)
-        fetch('https://shrouded-springs-98541.herokuapp.com/orders',{
+        fetch('https://travel-website.up.railway.app/orders',{
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

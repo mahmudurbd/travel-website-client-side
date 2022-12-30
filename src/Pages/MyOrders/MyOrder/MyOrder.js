@@ -4,7 +4,7 @@ const MyOrder = (props) => {
     const {name,order,address} = props.order;
     console.log(order._id);
     const handleDelete = id => {
-        const url = `https://shrouded-springs-98541.herokuapp.com/orders/${id}`;
+        const url = `https://travel-website.up.railway.app/orders/${id}`;
         fetch(url,{
             method: 'DELETE',
         })

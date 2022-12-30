@@ -6,7 +6,7 @@ const AddPackage = () => {
     const { register, handleSubmit,reset } = useForm();
     const onSubmit = data => {
         console.log(data)
-        axios.post('https://shrouded-springs-98541.herokuapp.com/tourPackages',data)
+        axios.post('https://travel-website.up.railway.app/tourPackages',data)
         .then(res => {
             if(res.data.insertId) {
                 alert('Package added successfully');

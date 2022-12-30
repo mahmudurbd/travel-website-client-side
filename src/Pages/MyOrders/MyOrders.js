@@ -4,7 +4,7 @@ import MyOrder from './MyOrder/MyOrder';
 const MyOrders = () => {
     const [myOrders,setMyOrders] = useState([]);
     useEffect(() => {
-        fetch('https://shrouded-springs-98541.herokuapp.com/orders')
+        fetch('https://travel-website.up.railway.app/orders')
         .then(res => res.json())
         .then(data => setMyOrders(data));
     },[])
